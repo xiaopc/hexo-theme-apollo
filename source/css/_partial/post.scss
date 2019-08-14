@@ -30,18 +30,18 @@
     h2, h3, h4, h5, h6 {
         position: relative;
         margin: 1em 0;
-        a:before {
+        &:before {
             content: "#";
             color: #42b983;
             position: absolute;
-            left: -0.7em;
+            left: -0.8em;
             top: -4px;
             font-size: 1.2em;
             font-weight: bold;
         }
     }
     h4, h5, h6 {
-        a:before {
+        &:before {
             content: "";
         }
     }
@@ -53,13 +53,21 @@
     h4, h5, h6 {
         font-size: 18px;
     }
+    
+    hr {
+        border: 0;
+        border-top: 5pt dotted #42b983;
+        margin: 20pt auto;
+        max-width: 67pt;
+    }
+    
     a {
         color: #42b983;
         word-break: break-all;
     }
     blockquote {
         margin: 2em 0;
-        padding-left: 20px;
+        padding: 1pt 0 1pt 20pt;
         border-left: 4px solid #42b983;
     }
     img {
@@ -116,9 +124,9 @@
 
 code,
 pre {
-    font-size: 0.8em;
+    font-size: 0.9em;
     background-color: #f8f8f8;
-    font-family: 'Roboto Mono', Monaco, courier, monospace;
+    font-family: 'Inconsolata', 'Roboto Mono', monospace;
 }
 
 .highlight {

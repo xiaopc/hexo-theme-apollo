@@ -1,5 +1,8 @@
 extends partial/layout
 
+block site_title
+    != config.title + " · " + config.subtitle
+
 block container
     include mixins/post
     +posts()

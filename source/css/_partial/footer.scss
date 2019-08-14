@@ -1,6 +1,7 @@
 .paginator {
     margin: 4em 0;
     text-align: center;
+    min-height: 35px;
     .prev, .next {
         display: inline-block;
         margin: 0 4px;
@@ -10,8 +11,15 @@
         font-size: 14px;
         color: #fff;
         background-color: #4fc08d;
+        transition: 0.05s all;
         &:hover {
             background-color: #22bd77;
+        }
+        &:focus {
+            border-bottom-color: transparent;
+            padding-bottom: 0;
+            transform: translateY(4px);
+            outline: none;
         }
     }
 }
